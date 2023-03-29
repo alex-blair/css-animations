@@ -1,0 +1,25 @@
+.box {
+  background-color: blueviolet;
+  overflow: hidden;
+  width: 50%;
+  height: 50%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  align-content: center; 
+  justify-content: center;  
+  z-index: 100000;
+}
+
+.circle {
+  border-radius: 100%;
+  border: 30px solid peru;
+}
+
+.circle:nth-child(1) {
+  animation: preloader .9s ease-in-out alternate infinite;
+}
+
+@keyframes preloader {
+  100% { transform: scale(2); }
+}
